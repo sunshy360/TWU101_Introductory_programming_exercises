@@ -20,10 +20,12 @@ public class Diamond {
     }
 
     public static void isoscelesTriangle(int height){
+        String line = "";
         for(int i=1;i<=height;i++){
             for(int j=0;j<i*2-1;j++)
-                System.out.print("*");
-            System.out.println();
+                line += "*";
+            System.out.println(centerAndAddSpace(line,2*height-1));
+            line = "";
         }
     }
 
@@ -44,10 +46,19 @@ public class Diamond {
     }
 
     public static void diamondWithName(int height){
-        for(int i=1;i<=height;i++){
+        String line = "";
+        for(int i=1;i<=height-1;i++){
             for(int j=0;j<i*2-1;j++)
-                System.out.print("*");
-            System.out.println();
+                line += "*";
+            System.out.println(centerAndAddSpace(line,2*height-1));
+            line = "";
+        }
+        System.out.println("sunshy");
+        for(int i=height-1;i>0;i--){
+            for(int j=0;j<i*2-1;j++)
+                line += "*";
+            System.out.println(centerAndAddSpace(line,2*height-1));
+            line = "";
         }
 
     }
