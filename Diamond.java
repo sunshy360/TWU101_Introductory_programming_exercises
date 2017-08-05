@@ -19,6 +19,7 @@ public class Diamond {
 
     }
 
+    //打印等腰三角形
     public static void isoscelesTriangle(int height){
         String line = "";
         for(int i=1;i<=height;i++){
@@ -29,6 +30,7 @@ public class Diamond {
         }
     }
 
+    //打印菱形
     public static void diamond(int height){
         String line = "";
         for(int i=1;i<=height;i++){
@@ -45,6 +47,7 @@ public class Diamond {
         }
     }
 
+    //打印带名字的菱形
     public static void diamondWithName(int height){
         String line = "";
         for(int i=1;i<=height-1;i++){
@@ -63,6 +66,7 @@ public class Diamond {
 
     }
 
+    //字符串居中并补齐空格
     public static String centerAndAddSpace(String str, int len){
         int actLen = str.length();
         for(int i=0;i<(len-actLen)/2;i++){

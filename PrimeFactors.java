@@ -9,7 +9,7 @@ public class PrimeFactors {
         Scanner s=new Scanner(System.in);
         factor(s.nextInt());
     }
-
+    //进行分解质因数
     static void factor(int number)
     {
         for(int i=2;i<number;i++)
@@ -27,6 +27,7 @@ public class PrimeFactors {
         }
     }
 
+    //判断是不是素数
     static boolean isPrime(int number)
     {
         for(int i=2;i<number;i++)
